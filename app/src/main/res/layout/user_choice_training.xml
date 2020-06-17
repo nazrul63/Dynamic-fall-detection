@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView_ask_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#345953"
+                    android:text="Choose your options to train"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_marginTop="30dp"/>
+              <!--  <RadioGroup
+                    android:id="@+id/radio_grp_th_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FAEBD7">
+                    <RadioButton
+                        android:id="@+id/r_button_training"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5e7974"
+                        android:text="Train the application"/>
+                    <RadioButton
+                        android:id="@+id/r_button_no_training"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5e7974"
+                        android:text="Go with the threshold value set"/>
+                </RadioGroup>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_hidden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView_trainig_phone_pos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginTop="22dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:text="Select the phone position for training"/>
+                <RadioGroup
+                    android:id="@+id/radio_grp_phone_pos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:background="#FAEBD7">
+                    <RadioButton
+                        android:id="@+id/r_btn_shirt_pocket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Shirt's pocket"
+                        android:textColor="#5e7974"/>
+                    <RadioButton
+                        android:id="@+id/r_btn_pant_pocket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Pant's pocket"
+                        android:textColor="#5e7974"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView_training_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:visibility="invisible"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:text="Select the training period unit"/>
+                <RadioGroup
+                    android:id="@+id/radio_grp_time_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    android:background="#FAEBD7">
+                    <RadioButton
+                        android:id="@+id/seconds_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="seconds"
+                        android:textColor="#5e7974" />
+                    <RadioButton
+                        android:id="@+id/minutes_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="minutes"
+                        android:textColor="#5e7974" />
+                </RadioGroup>
+                <EditText
+                    android:id="@+id/input_interval_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="training time is at least 1 minute "
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:layout_marginTop="22dp"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_start_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mybutton"
+                android:text="Start"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

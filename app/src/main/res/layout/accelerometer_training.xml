@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEBD7">
+
+    <TextView
+        android:id="@+id/textView_show_training_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:text="wellcome"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/textView_show_training_time_rmn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/button_go_training"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:text="Go to Training"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mybutton"/>
+        <Button
+            android:id="@+id/button_go_monitoring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:text="Go to Monitoring"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mybutton"/>
+    </LinearLayout>
+</LinearLayout>
