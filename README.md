@@ -1,5 +1,6 @@
 # Dynamic-fall-detection
- this repository contains the full source code of the project "To Design and Implement a Smartphone Based Fall Detection System"  
+this repository contains the full source code of the project "To Design and Implement a Smartphone Based Fall Detection System" 
+
        - All the class files, layout files are included in this zip file. 
        - To run this project, the .apk file is needed to be executed in a smartphone of Android based operating system. 
        - To modify the code or to do debugging, an IDE named Android Studio is needed.
